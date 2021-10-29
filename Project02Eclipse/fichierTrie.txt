@@ -1,0 +1,22 @@
+anxiety: 5
+arrhythmias: 3
+blindness: 1
+blurred vision: 5
+cough: 6
+dizziness: 5
+dry mouth: 8
+fever: 7
+headache: 3
+high blood pressure: 10
+inflamation: 13
+insomnia: 4
+low blood pressure: 4
+nausea: 5
+pupils: 7
+rapid heart rate: 1
+rash: 4
+shortness of breath: 2
+stiff neck: 4
+stomach pain 3
+tremor: 4
+water retention: 1
