@@ -1,3 +1,4 @@
+covid
 fever
 dialated pupils
 dry mouth
@@ -13,6 +14,7 @@ insomnia
 constricted pupils
 nausea
 cough
+covid
 shortness of breath
 blurred vision
 dizziness
@@ -98,3 +100,4 @@ anxiety
 anxiety
 cough
 blurred vision
+covid

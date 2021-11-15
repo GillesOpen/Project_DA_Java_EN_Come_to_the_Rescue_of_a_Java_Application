@@ -9,15 +9,19 @@ import java.util.TreeMap;
 
 public class WriteSymptomsOut implements ISymptomWrite {
 
-	// TreeMap est une représentation de données(clé, valeur)
-	// hiérarchique sous forme d'arbre binaire.
-	// Les couples de cette classe sont triés par clé dans l'ordre croissant.
+	/**
+	 * TreeMap est une représentation de données(clé, valeur) hiérarchique sous
+	 * forme d'arbre binaire. Les couples de cette classe sont triés par clé dans
+	 * l'ordre croissant donc par ordre alphabétique.
+	 */
 
 	private TreeMap<String, Integer> symptomMap;
 	private String filepath;
 
-	// changement tableau et fichier en sortie fichierOUT
-	// fichierOUT = "Project02Eclipse/result.out"
+	/**
+	 * changement tableau et fichier en sortie fichierOUT fichierOUT =
+	 * "Project02Eclipse/result.out"
+	 */
 	public WriteSymptomsOut(TreeMap<String, Integer> symptomMap, String filepath) {
 		this.symptomMap = symptomMap;
 		this.filepath = filepath;
@@ -30,9 +34,11 @@ public class WriteSymptomsOut implements ISymptomWrite {
 		try {
 			writer = new BufferedWriter(new FileWriter(fichierOut));
 
-			// interface statique publique Map.Entry<K,V> Une entrée de mappe (paire
-			// clé-valeur).
-			// La méthode Map.entrySet renvoie une vue de collection de la carte
+			/**
+			 * interface statique publique Map.Entry<K,V> Une entrée de mappe (paire
+			 * clé-valeur). La méthode Map.entrySet renvoie une vue de collection de la
+			 * carte
+			 */
 
 			for (Entry<String, Integer> entry : symptomMap.entrySet()) {
 				writer.write(entry.getKey() + ": " + entry.getValue());
