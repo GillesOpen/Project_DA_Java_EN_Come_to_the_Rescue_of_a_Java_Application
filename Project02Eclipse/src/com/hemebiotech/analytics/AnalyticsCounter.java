@@ -1,5 +1,11 @@
 package com.hemebiotech.analytics;
 
+/** 
+* @author MR GOFFIN GILLES
+* @version 1.0 le 15/11/2021
+*
+*/
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.TreeMap;
@@ -41,12 +47,17 @@ public class AnalyticsCounter {
 		WriteSymptomsOut writer = new WriteSymptomsOut(symptomMap, fichierOUT);
 
 		/**
-		 * traitement de lecture du fichier en entrée appel de méthode getSymptoms() La
-		 * méthode Frequency() de la classe Java Collections est utilisée pour obtenir
-		 * le nombre d'éléments dans la collection spécifiée égal à l'objet spécifié.
+		 * @param traitement de lecture du fichier en entrée fichierIN appel de méthode
+		 *                   getSymptoms()
 		 */
 
 		result = reader.getSymptoms();
+
+		/**
+		 * La méthode Frequency() de la classe Java Collections est utilisée pour
+		 * obtenir le nombre d'éléments dans la collection spécifiée égal à l'objet
+		 * spécifié.
+		 */
 
 		if (result != null) {
 			for (String e : result) {
@@ -55,7 +66,11 @@ public class AnalyticsCounter {
 				}
 			}
 		}
-		// traitement de fichier en sortie avec appel de la méthode writeSymptomsOut()
+		/**
+		 * @param traitement de fichier en sortie fichierOUT avec appel de la méthode
+		 *                   writeSymptomsOut()
+		 * 
+		 */
 		writer.writeSymptomsOut();
 	}
 }

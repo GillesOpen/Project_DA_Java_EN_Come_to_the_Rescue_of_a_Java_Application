@@ -18,6 +18,9 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		this.filepath = filepath;
 	}
 
+	/**
+	 * @return retourne la liste des symptoms dans result
+	 */
 	public ArrayList<String> getSymptoms() {
 		ArrayList<String> result = new ArrayList<String>();
 		if (filepath != null) {

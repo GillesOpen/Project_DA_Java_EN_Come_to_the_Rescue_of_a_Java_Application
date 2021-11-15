@@ -19,8 +19,10 @@ public class WriteSymptomsOut implements ISymptomWrite {
 	private String filepath;
 
 	/**
-	 * changement tableau et fichier en sortie fichierOUT fichierOUT =
-	 * "Project02Eclipse/result.out"
+	 * 
+	 * @param filepath a full or partial path to file with symptom strings in it,
+	 *                 one per line changement tableau et fichier en sortie
+	 *                 fichierOUT fichierOUT = "Project02Eclipse/result.out"
 	 */
 	public WriteSymptomsOut(TreeMap<String, Integer> symptomMap, String filepath) {
 		this.symptomMap = symptomMap;
